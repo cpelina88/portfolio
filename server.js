@@ -40,7 +40,7 @@ app.post('/thanks', (req,res) => {
     const msg = {
         to: 'cpelina88@gmail.com',
         from: 'test@example.com',
-        subject: 'contact info for' + req.body.firstName,
+        subject: 'contact info for ' + req.body.firstName,
         text: 'contact',
         html: '<p>' + req.body.firstName + '</p><p>' + req.body.lastName + '</p><p>' + req.body.email + '</p>',
       };

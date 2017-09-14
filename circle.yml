@@ -1,0 +1,8 @@
+deployment:
+  prod:
+    branch: master
+    heroku:
+      appname: radiant-atoll-22651
+machine:
+  node:
+    version: 8.1.4
