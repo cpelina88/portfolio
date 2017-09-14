@@ -1,0 +1,31 @@
+<html>
+    <head>
+      <title> Cameron's Portfolio </title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.2/css/bulma.min.css">
+    </head>
+    <body>
+      <div class='container'>
+        <h1 class='title'>
+            <%= person.firstName %> <%= person.lastName %>
+        </h1>
+        <p class='subtitle'>Junior Web Developer</p>
+        <hr />
+        <section class='section'>
+          <p>
+            Hello!  My name is Cameron Pelina.  I am an aspiring Web Developer with the drive to learn everything I can about coding/web development!  Here I am planning to showcase some of the things that I've worked on.  Thanks for visiting!
+          </p>
+        </section>
+        <section class="section">
+          <p>
+            Click <a href="https://github.com/cpelina88">here</a> to go to my GitHub profile which contains some of the projects I've worked on while learning to code at <a href="http://origincodeacademy.com">Origin Code Academy</a>.
+          </p>
+        </section>
+        <section class="section">
+          <form action="/contact" method="POST">
+            <button type="submit" class="button is-primary">Contact</button>
+          </form>
+        </section>
+      </div>
+    </body>
+  </html>
