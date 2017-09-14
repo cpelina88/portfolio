@@ -49,8 +49,10 @@ app.post('/thanks', (req,res) => {
     
 });
 
-app.listen(8080, () => {
-    console.log('listening at http://localhost:8080');
+const PORT = process.env.PORT || 8080;
+
+app.listen(PORT, () => {
+    console.log('listening at port ${PORT}');
 });
 
 
