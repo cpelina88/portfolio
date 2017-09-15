@@ -49,7 +49,7 @@ app.post('/thanks', (req,res) => {
     
 });
 
-app.use(express.static("/Users/Cameron/oca/startnow-node200-ejs-portfolio/styles"));
+app.use(express.static(__dirname + "/styles"));
 
 const PORT = process.env.PORT || 8080;
 
