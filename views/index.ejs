@@ -3,29 +3,70 @@
       <title> Cameron's Portfolio </title>
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.2/css/bulma.min.css">
+      <link rel="stylesheet" type="text/css" href="./styles.css">
     </head>
     <body>
-      <div class='container'>
-        <h1 class='title'>
-            <%= person.firstName %> <%= person.lastName %>
-        </h1>
-        <p class='subtitle'>Junior Web Developer</p>
-        <hr />
-        <section class='section'>
-          <p>
-            Hello!  My name is Cameron Pelina.  I am an aspiring Web Developer with the drive to learn everything I can about coding/web development!  Here I am planning to showcase some of the things that I've worked on.  Thanks for visiting!
-          </p>
-        </section>
-        <section class="section">
-          <p>
-            Click <a href="https://github.com/cpelina88">here</a> to go to my GitHub profile which contains some of the projects I've worked on while learning to code at <a href="http://origincodeacademy.com">Origin Code Academy</a>.
-          </p>
-        </section>
-        <section class="section">
-          <form action="/contact" method="POST">
-            <button type="submit" class="button is-primary">Contact</button>
-          </form>
-        </section>
+      <div id='wrapper'>
+        <div class="hero is-medium">
+          <div class="bg">
+            <div class="hero-body">
+              <div class='container'>
+                <h1 class='title'>
+                    <%= person.firstName %> <%= person.lastName %>
+                </h1>
+                <p class='subtitle'>Junior Web Developer</p>
+              </div>
+            </div>
+            <div class="hero-foot">
+              <nav class="tabs">
+                <div class="container">
+                  <ul>
+                    <li><a class="button" href='/'>Home</a></li>
+                    <li><a class='button' href="contact">Contact</a></li>
+                    <!-- <li><a class="button">Portfolio</a></li> -->
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <div class= 'container' id="wrapper">
+          <section class='section'>
+            <p>
+              Hello!  My name is Cameron Pelina.  I am an aspiring Web Developer with the drive to learn everything I can about coding/web development!  Here I am planning to showcase some of the things that I've worked on.  Thanks for visiting!
+            </p>
+            <br />
+            <p><a href="https://cp-hackathon-1.herokuapp.com/">Woooord?</a> - A word guessing game built using React, where it displays a list of words and an image.  You must then guess what hidden word is associated with the pictures and synonyms.</p>
+            <br />
+            <p><a href="https://cp-change-calculator.herokuapp.com/">Change Calculator</a> - An app that calculated how much change needs to be given after a USD transaction.</p>
+
+          </section>
+          <!-- <section class="section">
+            <p>
+              Click <a href="https://github.com/cpelina88">here</a> to go to my GitHub profile which contains some of the projects I've worked on while learning to code at <a href="http://origincodeacademy.com">Origin Code Academy</a>.
+            </p>
+          </section> -->
+          <!-- <section class="section">
+            <form action="/contact" method="POST">
+              <button type="submit" class="button is-primary">Contact</button>
+            </form>
+          </section> -->
+        </div>
       </div>
     </body>
+    <footer class="footer">
+        <div class="container">
+          <div class="content has-text-centered">
+            <hr class="has-text-dark" />
+            <p>
+              Cameron Pelina
+            </p>
+            <p>
+              <a class="icon" href="https://github.com/cpelina88">
+                <i class="fa fa-github"></i>
+              </a>
+            </p>
+          </div>
+        </div>
+      </footer>
   </html>

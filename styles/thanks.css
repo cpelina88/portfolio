@@ -1,0 +1,48 @@
+body {
+  /* background: rgba(255,255,255, 0.7); */
+  background-image: url("thanks.jpg");
+  /* opacity: 0.9; */
+  /* background-color: #cccccc; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  
+}
+
+.container {
+  
+  background-color: rgba(0, 0, 0, 0.70);
+
+}
+
+.padding {
+  padding-top: 200px;
+}
+
+.thanks {
+  padding: 50px 0px;
+}
+
+.button {
+  background-color: #281309;
+  color: #fff;
+  margin-bottom: 50px;
+}
+
+#wrapper {
+  flex: 1;
+}
+
+.footer {
+  /* margin-top: -20px; */
+  /* margin-bottom: -70px; */
+  padding: 0.5rem 1.5rem 1rem;
+  background-color: rgba(255, 255, 255, 0.50);
+}
+
+a {
+  color: #98634A;
+}

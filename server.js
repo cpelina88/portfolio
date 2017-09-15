@@ -29,7 +29,7 @@ app.get('/', (req, res) => {
     res.render('index', data);
 });
 
-app.post('/contact', (req,res) => {
+app.get('/contact', (req,res) => {
     res.render('contact');
 });
 
@@ -48,6 +48,8 @@ app.post('/thanks', (req,res) => {
     res.render('thanks', { contact: req.body });
     
 });
+
+app.use(express.static("/Users/Cameron/oca/startnow-node200-ejs-portfolio/styles"));
 
 const PORT = process.env.PORT || 8080;
 

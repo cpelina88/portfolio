@@ -3,24 +3,42 @@
       <title> Contact Cameron </title>
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.2/css/bulma.min.css">
+      <link rel="stylesheet" type="text/css" href="./contact.css">
     </head>
     <body>
-      <div class='container'>
-        <h1 class="title">Contact</h1>
-        <form action="/thanks" method="POST" class="field">
-          <label for="firstName" class="label">First Name:</label>
-          <input name="firstName" type="text">
-  
-          <label for="lastName" class="label">Last Name:</label>
-          <input name="lastName" type="text">
-  
-          <label for="email" class="label">Email:</label>
-          <input name="email" type="text">
-          <br />
-          <section class="section">
-          <button type="submit" class="button is-primary">Submit</button>
-          </section>
-        </form>
+      <div  id='wrapper'>
+        <div class="padding"></div>
+        <div class='container has-text-centered'>
+          <h1 class="title">Contact</h1>
+          <form action="/thanks" method="POST" class="field">
+            <label for="firstName" class="label">First Name:</label>
+            <input name="firstName" type="text">
+    
+            <label for="lastName" class="label">Last Name:</label>
+            <input name="lastName" type="text">
+    
+            <label for="email" class="label">Email:</label>
+            <input name="email" type="text">
+            <br />
+            <section class="section">
+            <button type="submit" class="button">Submit</button>
+            </section>
+          </form>
+        </div>
       </div>
     </body>
+    <footer class="footer">
+        <div class="">
+          <div class="content has-text-centered">
+            <p>
+              Cameron Pelina
+            </p>
+            <p>
+              <a class="icon" href="https://github.com/cpelina88">
+                <i class="fa fa-github"></i>
+              </a>
+            </p>
+          </div>
+        </div>
+      </footer>
   </html>

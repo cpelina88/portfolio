@@ -1,14 +1,33 @@
 <html>
     <head>
-      <title> Cameron Thanks You </title>
+      <title>Thank You!</title>
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.2/css/bulma.min.css">
+      <link rel="stylesheet" type="text/css" href="./thanks.css">
     </head>
     <body>
-      <div class="container">
-        <div>
-          Thank you <%= contact.firstName %> <%= contact.lastName %>.
+      <div  id='wrapper'>
+        <div class='padding'></div>
+        <div class="container has-text-centered">
+          <div class='thanks has-text-light'>
+            Thank you <%= contact.firstName %>! I will get back to you as soon as possible.
+          </div>
+          <a class='button' href="/">Back to Home</a>
         </div>
       </div>
     </body>
+    <footer class="footer">
+        <div class="">
+          <div class="content has-text-centered">
+            <p>
+              Cameron Pelina
+            </p>
+            <p>
+              <a class="icon" href="https://github.com/cpelina88">
+                <i class="fa fa-github"></i>
+              </a>
+            </p>
+          </div>
+        </div>
+      </footer>
   </html>
